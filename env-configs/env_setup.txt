@@ -1,0 +1,16 @@
+Create conda envs:
+-------- XX -------- || -------- XX --------
+
+# Path Based Env: 
+conda create -p venv python==3.12
+# Global Env: 
+conda create -n venv python==3.12
+
+-------- XX -------- || -------- XX --------
+
+# Path Based Env using YAML file (name should be commented out in yaml file): 
+conda env create --prefix ./venv -f torch-conda.yml
+
+# Global Env using YAML file (name should be present in yaml file): 
+conda env create -f /path/to/torch-conda.yml
+
